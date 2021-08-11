@@ -8,6 +8,7 @@ const Card = ({data}) => {
         href={data.links.video_link}
         target="_blank"
         className={styles.card}
+        rel="noopener noreferrer"
       >
         <img
           src={

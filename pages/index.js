@@ -20,9 +20,9 @@ export default function Home({ launches }) {
         <p className={styles.description}>Latest launched from SpaceX 🚀</p>
 
         <div className={styles.grid}>
-          {launches.map((data) => {
+          {launches.map((data,idx) => {
             return (
-             <Card data={data}/>
+             <Card data={data} key={idx}/>
             );
           })}
         </div>
